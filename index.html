@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style ="border: 2px solid black; width: 150px;">
+    <h1 class="container" style="text-align:center"></h1>
+</div>
+</body>
+<script>
+    function currentTime(){
+    const d = new Date();
+    const time1 = {
+        hours: d.getHours(),
+        minutes: d.getMinutes(),
+        seconds: d.getSeconds()
+        }
+    setTimeout(()=> {return null}, 5000);
+
+    const e = new Date();
+    const time2 = {
+        seconds: e.getSeconds()
+    }
+    }
+    const time = time2.seconds - time1.seconds;
+    document.querySelector('.container').innerHTML=time;
+   
+</script>
+</html>
